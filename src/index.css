@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typing {
+  0% { width: 0 }
+  40% { width: 9ch }       /* fully typed */
+  60% { width: 9ch }       /* pause before deleting */
+  100% { width: 0 }        /* erase back to 0 */
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.typing-emmanuel {
+  width: 9ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation:
+    typing 5s steps(9) infinite,
+    blink .5s step-end infinite;
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+.shake-archibong {
+  display: inline-block;
+  animation: shake 0.6s ease-in-out infinite;
+}
+
+
+@layer base {
+  :root {
+    --background: 220 15% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 15% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 188 95% 52%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 15% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 188 95% 52%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 188 95% 52%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(188 95% 52% / 0.15), hsl(188 95% 52% / 0.05));
+    --gradient-card: linear-gradient(135deg, hsl(220 15% 12%), hsl(220 15% 10%));
+    --shadow-glow: 0 0 30px hsl(188 95% 52% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+
+  .card-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hover-scale {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+}
