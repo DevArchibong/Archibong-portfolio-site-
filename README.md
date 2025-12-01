@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+Emmanuel Archibong – Portfolio Website
 
-## Project info
+A modern, fast, and responsive personal portfolio showcasing my skills as a Full-Stack Developer, my projects, and my journey in tech.
+The goal of this site is to present my work professionally and make it easy for companies, collaborators, and clients to reach me.
 
-**URL**: https://lovable.dev/projects/3442f94e-2119-4c7f-a7d5-bf21caa5f4b6
+🚀 Features
 
-## How can I edit this code?
+Responsive Design – Works smoothly across all devices
 
-There are several ways of editing your application.
+Modern UI/UX – Clean layout, animations, and smooth transitions
 
-**Use Lovable**
+Project Showcase – Highlighting selected real-world projects
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3442f94e-2119-4c7f-a7d5-bf21caa5f4b6) and start prompting.
+About Me Section – My background, mission, and goals
 
-Changes made via Lovable will be committed automatically to this repo.
+Contact Section – Simple and accessible way to reach me
 
-**Use your preferred IDE**
+Tech Stack Display – Technologies I use as a full-stack developer
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+💻 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Frontend: React, TypeScript, TailwindCSS
 
-Follow these steps:
+Backend: Node.js, Express, Mongodb
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Version Control: Git & GitHub
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Deployment: Vercel 
 
-# Step 3: Install the necessary dependencies.
-npm i
+📂 Project Structure
+/src
+  /components
+  /pages
+  /assets
+  /styles
+public/
+README.md
+package.json
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🧩 Key Sections
+1. Hero Section
+
+A bold introduction highlighting:
+
+Who I am
+
+What I build
+
+My specialty in fast, scalable web applications
+
+2. About Me
+
+A summary of my experience, education and passion
+
+3. Projects
+
+A curated list of my top projects with:
+
+Live demo links
+
+GitHub repositories
+
+Short descriptions and tech stack
+
+4. Contact
+
+Direct ways to reach me:
+
+Email
+
+LinkedIn
+
+GitHub
+
+📦 Installation & Setup
+
+Clone the repo:
+
+git clone https://github.com/DevArchibong/Archibong-portfolio-site.git
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Build for production:
 
-**Use GitHub Codespaces**
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🌐 Live Demo
 
-## What technologies are used for this project?
+👉 https://Archibong-portfolio-site.com
 
-This project is built with:
+🙌 Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This portfolio is personal, but feedback or suggestions are always welcome.
+Feel free to open an issue or PR.
 
-## How can I deploy this project?
+📄 License
 
-Simply open [Lovable](https://lovable.dev/projects/3442f94e-2119-4c7f-a7d5-bf21caa5f4b6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is licensed under the MIT License.
