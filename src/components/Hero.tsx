@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import profilePics from "@/assets/my_headshot.jpg"
 
 const Hero = () => {
   return (
@@ -64,7 +65,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl animate-glow" />
               <div className="relative bg-gradient-card rounded-2xl border border-border p-8 hover-scale">
                 <img
-                  src="./my_headshot.jpg"
+                  src = {profilePics}
                   alt="Emmanuel Archibong"
                   className="rounded-xl w-full h-full object-cover"
                 />
